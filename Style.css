@@ -1,0 +1,328 @@
+body{
+    font-family: 'Poppins';
+    margin:0;
+    padding: 0;
+}
+p{
+    font-size: 20px;
+}
+li{
+    list-style: none;
+    margin-right: 25px;    
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+
+.lista a:hover{
+    display: inline-block;
+    transition: .8s;
+    transform: scale(1.1);
+}
+
+.lista{
+    display: flex;
+    transition: .8s;    
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.principal{
+    text-align: center;
+    margin-top: 180px;
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+h2{
+    font-size:25px;
+    margin-bottom: 50px;
+}
+
+.principal  a{
+    font-size: 14px;
+    background:#46b3ff;
+    padding: 20px 30px 20px 30px; 
+    border-radius: 10px;
+}
+
+.contenedor-parrafo-y-btn a{
+    font-size: 14px;
+    background: #46b3ff;
+    padding: 20px 30px 20px 30px; /* espacios al rededor */
+    border-radius: 10px;
+    margin-top: 18px;
+    display:inline-block;
+}
+
+header{
+    background: url(Pictures/fondo.jpg);
+    height: 100vh ; /* Viewport height alto adaptado a 100*/
+    width: 100vw;
+    background-size: cover;
+}
+header .blur{
+    backdrop-filter: opacity(50%);
+    height: 100vh;
+    width: auto;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto; 
+    
+}
+
+/*INICIA SECCIÓN SOBRE MI */
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;   
+    padding-bottom: 35px ;   
+}
+.contenedor-parrafo-y-btn{
+    width: 42%;
+    text-align:justify;
+}
+.contenedor-parrafo-y-btn p{
+    font-size: 17px;
+}
+.contenedor-sobremi img{
+    width: 30%;
+    height: 30%;
+}
+
+/* INICIA SECCIÓN SERVICIOS*/
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 35px;
+  
+}
+.servicio{
+    width: 24%;
+    padding:50px 38px 50px 38px;
+    border-radius: 10px;
+    color:white;
+    box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.28);
+}
+.servicio h4{
+    font-size:25px ;
+    margin:0;
+    text-align:center;
+}
+.violeta{
+    background:#0752fe;
+}
+.celeste{
+    background: #46b3ff;
+
+}
+
+.servicio img{
+    float: right;
+   padding-top: 35px;
+}
+
+.servicio p{
+    font-size:16px;
+    text-align: justify;
+    height: 200px;
+}
+
+/*INICIA SECCIÓN PORQUE TRABAJAR CONMIGO*/
+
+.contenedor-porque{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom:45px ;
+}
+.contenedor-porque h4{
+    margin: 0;
+    font-size: 20px;
+}
+.contenedor-porque p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.porque{
+    width:27%;
+}
+
+/*Que esperas*/
+#que-esperas{
+    background: linear-gradient(#0752fe, #46b3ff );
+    border-radius: 40px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+#que-esperas h3{
+    font-size: 23px;
+    color:#fff;
+    margin:0;
+}
+
+/*Whatsapp*/
+#whatsapp a{
+    background:none;
+    position: fixed;
+    top:85%;
+    right:1%;
+    transform:scale(.8);
+    transition: 1s;
+    z-index: 1;
+    
+}
+
+#whatsapp a:hover{
+ transition: 1s;
+ transform:scale(1);
+}
+
+.menu-icon{
+    display: none;
+}
+
+#contacto .contenedor{
+    width: 75%;
+}
+
+.contenedor-form{
+    background: linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+    padding: 50px 50px 80px 50px;
+    border-radius: 10px;
+    box-shadow: -1px 5px 14px 0px rgba(0,0,0,0.29);
+  }
+.social-media{
+    padding-top: 12px;
+}
+.social-media a {
+    margin:0 20px;
+}
+
+  #contacto form input[type="text"], #contacto form input[type="email"], #contacto form textarea {
+    width:100%;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid  #fff;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  ::placeholder {
+    color: #fff;
+  }
+  
+  input[type="submit"] {
+    background: none;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 4px;
+    float: right;
+  }
+
+/*RESPONSIVE*/
+@media (max-width: 800px){
+   
+   nav{
+       position: absolute;
+       top:70px;
+       left: 0;
+       background:#232220;
+       width: 100%;
+       display:none;
+   }
+
+   nav .lista{
+       flex-direction: column;
+   }
+
+   .menu-icon{
+       display: block;
+       width:25px;
+   }
+
+   .titular{
+       margin-top: 54px;
+   }
+   h1{
+       font-size: 55px;
+   }
+   
+   .contenedor-sobremi{
+       flex-direction: column;
+   }
+    .contenedor-sobremi img{
+        width: 50%;
+        height:50%
+
+    }
+
+   .contenedor-parrafo-y-btn{
+       width: auto;
+   }
+
+   .contenedor-servicios{
+       flex-direction: column;
+   }
+
+   .servicio{
+       width: auto;
+       margin:auto;
+       margin-bottom: 15px;;
+   }  
+
+   .contenedor-porque{
+       flex-direction: column;
+   }
+   .porque{
+       width: auto;
+   }
+
+   #contacto .contenedor{
+    width: 90%;
+    
+    }
+ 
+}
+
+/*Tableta*/
+@media(min-width:700px) and (max-width:900px){
+    header{
+        height: 53vh;
+        width: auto;
+    }
+    header .blur{
+        backdrop-filter: blur(5px);
+        height: 53vh ; /* Viewport height alto adaptado a 100*/
+        width: auto;
+    }
+   
+    .servicio{
+        width: 54%;
+    }
+}
