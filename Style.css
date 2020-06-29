@@ -106,7 +106,9 @@ h3{
 .contenedor-sobremi img{
     width: 30%;
     height: 30%;
-}
+    border-radius: 10px;
+    box-shadow: -9px 10px 13px 0px rgba(0,0,0,0.22);
+    }
 
 /* INICIA SECCIÓN SERVICIOS*/
 
