@@ -9,8 +9,7 @@
 	<link 
 		href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"
 	>
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 	<link
 	  rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -252,26 +251,14 @@
 	
 
 	<!--Carousel-Sección-mis-Proyectos-->
-	<script src="owlcarousel/jquery.min.js"></script>
-	<script src="owlcarousel/owl.carousel.min.js"></script>
+	
+	<script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    
 	<script>
-		var owl = $('.owl-carousel');
-		owl.owlCarousel({
-			items:3,
-			loop:true,
-			margin:10,
-			autoplay:true,
-			autoplayTimeout:2000,
-			autoplayHoverPause:true
-			
-		});
-		$('.play').on('click',function(){
-			owl.trigger('play.owl.autoplay',[2000])
-		})
-		$('.stop').on('click',function(){
-			owl.trigger('stop.owl.autoplay')
-		})
-
 		/*MENU SLIDE*/
 		$('.menu-icon').click(function(){
 			$ ('header nav').slideToggle();
