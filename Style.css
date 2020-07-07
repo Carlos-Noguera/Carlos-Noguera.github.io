@@ -399,7 +399,23 @@ input[type="submit"] {
     width: 70%;
     margin-top: 10px;
     height: 250px;
-    }
+  }
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #232220;
+    width: 100%;
+    display: none;
+  }
 
+  nav .lista {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 25px;
+  }
   
 }
